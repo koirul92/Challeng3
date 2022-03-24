@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.FourthFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:contentDescription="@string/desc"
         android:id="@+id/img_welcome4"

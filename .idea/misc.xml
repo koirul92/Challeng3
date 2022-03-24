@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/drawable/bg_round_shape.xml" value="0.127" />
+        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/drawable/ic_undraw_welcome_cats_thqn.xml" value="0.127" />
+        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout-v26/fragment_third.xml" value="0.209375" />
         <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/fragment_first.xml" value="0.1358108108108108" />
-        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/fragment_fourth.xml" value="0.209375" />
+        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/fragment_fourth.xml" value="0.33" />
         <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/fragment_second.xml" value="0.209375" />
         <entry key="..\:/Users/Bax/AndroidStudioProjects/Challeng3/app/src/main/res/layout/fragment_third.xml" value="0.209375" />
       </map>

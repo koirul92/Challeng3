@@ -7,6 +7,25 @@
     android:background="@color/white"
     tools:context=".Fragment.SecondFragment">
 
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/img_bg_name"
+        android:src="@drawable/bg_round_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome_screen2"
+        android:layout_width="384dp"
+        android:layout_height="48dp"/>
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/img_welcome2"
+        android:src="@drawable/ic_undraw_questions_re_1fy7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen2"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"/>
+
     <TextView
         android:id="@+id/tv_screen2"
         android:layout_width="match_parent"
@@ -19,26 +38,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_welcome_screen2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="@string/welcome2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_welcome2" />
 
 
     <EditText
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_go_to_screen_3"
+        android:autofillHints="name"
+        app:layout_constraintStart_toStartOf="@id/img_bg_name"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_name"
         android:id="@+id/et_name"
         android:hint="@string/input_name"
-        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"/>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn_go_to_screen_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_3"
         android:textAllCaps="false"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/img_bg_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

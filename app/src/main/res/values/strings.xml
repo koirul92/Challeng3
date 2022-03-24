@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Challeng 3</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -13,9 +14,13 @@
     <string name="back_to_screen_3">Back To Screen 3</string>
     <string name="retired_age">Pensiun Umur Berapa :</string>
     <string name="die_age">Perkiraan meninggal umur :</string>
-    <string name="outcome">Pengeluaran pertahun :</string>
+    <string name="outcome">Pengeluaran pertahun :  (dalam juta)</string>
     <string name="outcome2">Pengeluaran Anda:</string>
     <string name="die">Perkiraan Usia Anda Sampai:</string>
     <string name="retired">Anda ingin pensiun pada usia:</string>
-    <string name="nama_anda">Nama Anda:</string>
+    <string name="your_name">Nama Anda:</string>
+    <string name="welcome">Haloo, Ada yang bisa dibantu??\nJika ingin konsultasi dana pensiun bisa lanjut ke Screen2</string>
+    <string name="desc">awawkkwak</string>
+    <string name="welcome2">Sebelumnya apakah saya boleh mengetahui nama Anda?</string>
+    <string name="result">hasilnya adalah:</string>
 </resources>

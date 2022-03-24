@@ -6,7 +6,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.FourthFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:contentDescription="@string/desc"
+        android:id="@+id/img_welcome4"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_undraw_fitting_piece_re_pxay"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"/>
+    <ImageView
+        android:layout_margin="12dp"
+        android:contentDescription="@string/desc"
+        android:id="@+id/img_bg_retired"
+        android:src="@drawable/bg_round_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_welcome4"
+        android:layout_width="384dp"
+        android:layout_height="48dp"/>
+
     <TextView
         android:id="@+id/tv_screen4"
         android:layout_width="match_parent"
@@ -20,39 +39,63 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        app:layout_constraintBottom_toTopOf="@+id/et_die_age"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/img_bg_retired"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_retired"
         android:id="@+id/et_retired_age"
         android:hint="@string/retired_age"
-        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:autofillHints="age"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"/>
-    <EditText
-        app:layout_constraintBottom_toTopOf="@+id/et_outcome"
+    <ImageView
+        android:layout_margin="12dp"
+        android:contentDescription="@string/desc"
+        android:id="@+id/img_bg_die"
+        android:src="@drawable/bg_round_shape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bg_retired"
+        android:layout_width="384dp"
+        android:layout_height="48dp"/>
+    <ImageView
+        android:layout_margin="12dp"
+        android:contentDescription="@string/desc"
+        android:id="@+id/img_bg_outcome"
+        android:src="@drawable/bg_round_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bg_die"
+        android:layout_width="384dp"
+        android:layout_height="48dp"/>
+    <EditText
+        app:layout_constraintStart_toStartOf="@id/img_bg_die"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_die"
         android:id="@+id/et_die_age"
+        android:inputType="number"
+        android:autofillHints="age"
         android:hint="@string/die_age"
-        android:layout_width="wrap_content"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"/>
     <EditText
-        app:layout_constraintBottom_toTopOf="@+id/btn_back_to_screen_3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/img_bg_outcome"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_outcome"
         android:id="@+id/et_outcome"
+        android:inputType="number"
+        android:autofillHints="money"
         android:hint="@string/outcome"
-        android:layout_width="wrap_content"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"/>
+
     <Button
+        android:layout_margin="12dp"
         android:id="@+id/btn_back_to_screen_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back_to_screen_3"
         android:textAllCaps="false"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_bg_outcome"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

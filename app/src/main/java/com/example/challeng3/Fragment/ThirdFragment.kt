@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.challeng3.R
 import com.example.challeng3.databinding.FragmentThirdBinding
 
 
@@ -16,7 +15,7 @@ class ThirdFragment : Fragment() {
     private var _binding: FragmentThirdBinding? = null
     private val binding get() = _binding!!
 
-    val args: ThirdFragmentArgs by navArgs()
+    private val args: ThirdFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,9 +33,9 @@ class ThirdFragment : Fragment() {
         binding.tvName.text = name
 
         binding.btnGoToScreen4.setOnClickListener {
-            val ThirdFragmentAction =
+            val thirdFragmentAction =
                 ThirdFragmentDirections.actionThirdFragmentToFourthFragment(name)
-            findNavController().navigate(ThirdFragmentAction)
+            findNavController().navigate(thirdFragmentAction)
         }
 
         val result = args.result?.result
@@ -46,11 +45,14 @@ class ThirdFragment : Fragment() {
 
 
         if (result != null) {
-            binding.tvRetiredAge.text = "$retired"
-            binding.tvDieAge.text = "$die cm"
-            binding.tvOutcome.text = "$outcome cm"
+            binding.tvOutcome.visibility = View.GONE
+            binding.tvDieAge.visibility = View.GONE
+            binding.tvRetiredAge.visibility = View.GONE
             binding.tvResult.text =
-                "Bapak/Ibu $name, Jumlah uang yang anda butuhkan sebesar Rp.$result"
+                "Saudara $name, Jadi anda ingin pensiun diumur $retired tahun," +
+                        "estimasi anda hidup sampai umur $die tahun, " +
+                        "lalu pengeluaran anda pertahunnya $outcome juta, " +
+                        "Jadi Perkiraan dana pensiun yang dibutuhkan sebesar Rp.$result juta"
             binding.tvName.text = null
             binding.btnGoToScreen4.visibility = View.GONE
         } else {

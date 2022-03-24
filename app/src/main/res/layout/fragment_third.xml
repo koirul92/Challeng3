@@ -19,6 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="@string/nama_anda"
+        android:text="@string/your_name"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +85,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="hasilnya adalah: "
+        android:text="@string/result"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

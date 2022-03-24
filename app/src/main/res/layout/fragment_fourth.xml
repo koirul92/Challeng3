@@ -8,8 +8,8 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
+        android:contentDescription="@string/desc"
         android:id="@+id/img_welcome4"
-
         app:layout_constraintTop_toBottomOf="@id/tv_screen4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +44,8 @@
         app:layout_constraintBottom_toBottomOf="@id/img_bg_retired"
         android:id="@+id/et_retired_age"
         android:hint="@string/retired_age"
+        android:inputType="number"
+        android:autofillHints="age"
         android:layout_width="384dp"
         android:layout_height="wrap_content"/>
     <ImageView
@@ -70,6 +72,8 @@
         app:layout_constraintStart_toStartOf="@id/img_bg_die"
         app:layout_constraintBottom_toBottomOf="@id/img_bg_die"
         android:id="@+id/et_die_age"
+        android:inputType="number"
+        android:autofillHints="age"
         android:hint="@string/die_age"
         android:layout_width="384dp"
         android:layout_height="wrap_content"/>
@@ -77,6 +81,8 @@
         app:layout_constraintStart_toStartOf="@id/img_bg_outcome"
         app:layout_constraintBottom_toBottomOf="@id/img_bg_outcome"
         android:id="@+id/et_outcome"
+        android:inputType="number"
+        android:autofillHints="money"
         android:hint="@string/outcome"
         android:layout_width="384dp"
         android:layout_height="wrap_content"/>

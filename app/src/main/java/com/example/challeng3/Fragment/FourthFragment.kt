@@ -13,7 +13,7 @@ import com.example.challeng3.databinding.FragmentFourthBinding
 class FourthFragment : Fragment() {
     private var _binding: FragmentFourthBinding? = null
     private val binding get() = _binding!!
-    val args:FourthFragmentArgs by navArgs()
+    private val args:FourthFragmentArgs by navArgs()
 
 
     override fun onCreateView(
@@ -32,15 +32,15 @@ class FourthFragment : Fragment() {
             val name = args.name
             val result =
                 (binding.etDieAge.text.toString().toInt()-binding.etRetiredAge.text.toString().toInt()) * binding.etOutcome.text.toString().toInt()
-            val PersonData = DataPerson(
+            val personData = DataPerson(
                 name,
                 result,
                 binding.etRetiredAge.text.toString(),
                 binding.etDieAge.text.toString(),
                 binding.etOutcome.text.toString()
             )
-            val FourthFragmentAction = FourthFragmentDirections.actionFourthFragmentToThirdFragment(PersonData)
-            findNavController().navigate(FourthFragmentAction)
+            val fourthFragmentAction = FourthFragmentDirections.actionFourthFragmentToThirdFragment(personData)
+            findNavController().navigate(fourthFragmentAction)
             }
         }
 

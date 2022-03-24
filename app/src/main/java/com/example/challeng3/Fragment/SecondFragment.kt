@@ -16,7 +16,7 @@ class SecondFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSecondBinding.inflate(inflater,container,false)
         return binding.root
@@ -28,8 +28,8 @@ class SecondFragment : Fragment() {
             val hasil = DataPerson(
                 binding.etName.text.toString()
             )
-            val SecondFragmentAction = SecondFragmentDirections.actionSecondFragmentToThirdFragment(hasil)
-            findNavController().navigate(SecondFragmentAction)
+            val secondFragmentAction = SecondFragmentDirections.actionSecondFragmentToThirdFragment(hasil)
+            findNavController().navigate(secondFragmentAction)
             }
         }
 

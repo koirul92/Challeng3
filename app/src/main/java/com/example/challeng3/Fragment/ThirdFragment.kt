@@ -45,14 +45,17 @@ class ThirdFragment : Fragment() {
 
 
         if (result != null) {
+            /*binding.tvRetiredAge.text = "Pensiun Umur : $retired"
+            binding.tvDieAge.text = "Prediksi meninggal Umur : $die"
+            binding.tvOutcome.text = "Pengeluaran pertahun : $outcome"*/
             binding.tvOutcome.visibility = View.GONE
             binding.tvDieAge.visibility = View.GONE
             binding.tvRetiredAge.visibility = View.GONE
             binding.tvResult.text =
                 "Saudara $name, Jadi anda ingin pensiun diumur $retired tahun," +
                         "estimasi anda hidup sampai umur $die tahun, " +
-                        "lalu pengeluaran anda pertahunnya $outcome juta, " +
-                        "Jadi Perkiraan dana pensiun yang dibutuhkan sebesar Rp.$result juta"
+                        "lalu pengeluaran anda pertahunnya $outcome juta rupiah, " +
+                        "Jadi Perkiraan dana pensiun yang dibutuhkan sebesar $result juta rupiah"
             binding.tvName.text = null
             binding.btnGoToScreen4.visibility = View.GONE
         } else {
